@@ -1,0 +1,13 @@
+div{
+background-color:yellow;
+padding:20px 60px;
+border-style:dashed;
+border-width:5px;
+border-color:blue;
+margin:10px 40px 10px 40px;
+
+}
+
+span{
+	color:green;
+}

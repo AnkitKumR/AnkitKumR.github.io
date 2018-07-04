@@ -1,0 +1,109 @@
+#########HTML
+<div>
+			<section class="one">
+		<h1>Section One</h1>
+		
+		<div class="one__icon">:)</div>
+		</section>
+		
+		<section class="two">
+		<h1>Section two</h1>
+		<img src=""/>
+		</section>
+		
+		<section class="three">
+		<h1>Section three</h1>
+		</section>
+		</div>
+        
+	
+
+
+
+
+
+
+#########CSS
+	
+	section{
+	padding:30vh 0;
+	margin:0 40px 0 40px;
+}
+.top__image{
+	border-radius:50%;
+}
+
+.one__icon{
+	background:rgba(0,0,0,.3);
+	color:rgba(0,0,0,.3);
+	width:100px;
+	height:100px;
+	margin:0 auto;
+	border-radius:50%;
+	display:grid;
+	place-items:center;	
+	font-size:2em;
+	
+}
+
+.one{
+	background:#FFC145;
+	position:relative;
+	border-radius:0 50px 0 0;
+	
+	
+}
+.one::after,
+.one::before{
+	position:absolute;
+	content:'';
+	width:150px;
+	height:150px;
+	margin:0 auto;
+	background:#FFC145;
+	bottom:-1em;
+	z-index:100;
+	
+}
+.one::before{
+	right: 50%;
+	transform: skew(0,20deg);
+	
+}
+.one::after{
+	transform: skew(0,-20deg);
+	
+}
+.two{
+	background:#FF6B6C;
+	
+	margin-bottom:-10vm;
+	position:relative;
+	z-index:10;
+	clip-path:polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%);
+	margin-bottom:-8vw;
+}
+.two__image{
+	clip-path:circle();
+}
+
+.two::before{
+	position:absolute;
+	content:'';
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	margin: 0 auto;
+	background:#FF6B6C;
+	bottom:-2em;
+}
+
+.two::before{
+	left:45%;
+}
+
+
+.three{
+	background:#5B5F97;
+    border-radius:0 0 0 50px;	
+}
